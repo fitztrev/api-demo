@@ -1,4 +1,4 @@
-import { AccessContext, HttpClient, OAuth2AuthCodePKCE } from '@bity/oauth2-auth-code-pkce';
+import { type AccessContext, type HttpClient, OAuth2AuthCodePKCE } from '@bity/oauth2-auth-code-pkce';
 
 // export const lichessHost = 'http://l.org';
 export const lichessHost = 'https://lichess.org';

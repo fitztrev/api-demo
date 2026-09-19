@@ -1,5 +1,5 @@
-import { h, VNode } from 'snabbdom';
-import { lichessHost, clientUrl, Ctrl } from './ctrl';
+import { h, type VNode } from 'snabbdom';
+import { clientUrl, type Ctrl, lichessHost } from './ctrl';
 
 export function view(ctrl: Ctrl): VNode {
   return h('table', [

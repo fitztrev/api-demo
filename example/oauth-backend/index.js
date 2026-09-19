@@ -1,6 +1,6 @@
 const express = require('express')
 const session = require('express-session')
-const crypto = require('crypto')
+const crypto = require('node:crypto')
 
 const app = express()
 const port = 3000
