@@ -1,4 +1,5 @@
 import { attributesModule, eventListenersModule, init } from 'snabbdom';
+
 import { Ctrl } from './ctrl';
 import { view } from './view';
 

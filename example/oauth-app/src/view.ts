@@ -1,4 +1,5 @@
 import { h, type VNode } from 'snabbdom';
+
 import { clientUrl, type Ctrl, lichessHost } from './ctrl';
 
 export function view(ctrl: Ctrl): VNode {
@@ -17,7 +18,7 @@ export function view(ctrl: Ctrl): VNode {
             attrs: { disabled: !!ctrl.accessContext?.token },
             on: { click: () => ctrl.login() },
           },
-          'Login'
+          'Login',
         ),
         ' ',
         h(
@@ -26,7 +27,7 @@ export function view(ctrl: Ctrl): VNode {
             attrs: { disabled: !ctrl.error && !ctrl.accessContext?.token },
             on: { click: () => ctrl.logout() },
           },
-          ctrl.accessContext ? 'Logout' : 'Reset'
+          ctrl.accessContext ? 'Logout' : 'Reset',
         ),
       ]),
     ]),
